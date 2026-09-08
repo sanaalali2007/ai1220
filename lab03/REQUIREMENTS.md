@@ -50,12 +50,12 @@ system shall" and trace it to one or more user requirements.
 
 Format: `FR-1 [Must] The system shall ... [Source: UR-1]`
 
-- FR-1 [Must] The system shall
-- FR-2 [Must] The system shall
-- FR-3 [Must] The system shall
-- FR-4 [Must] The system shall
-- FR-5 [Must] The system shall
-- FR-6 [Must] The system shall
+- FR-1 [Must] The system shall hide an attendee's identity from other users on an event's attendee list by default. [Source: UR-1]
+- FR-2 [Must] The system shall let an attendee opt in to show their name on an event's public attendee list. [Source: UR-1]
+- FR-3 [Must] The system shall present event and announcement pages with screen-reader-compatible labels and keyboard/touch navigation. [Source: UR-2]
+- FR-4 [Must] The system shall let any officer of a verified group edit a draft announcement but shall only let an officer with "approved publisher" permission publish it. [Source: UR-3]
+- FR-5 [Must] The system shall notify every student who RSVP'd to an event when its date, time, or location is edited. [Source: UR-4]
+- FR-6 [Must]
 
 ## 4. Non-functional requirements
 
@@ -66,10 +66,10 @@ question in Section 8.
 
 Format: `NFR-1 [Must] The system shall ... [Measure: target and condition] [Source: UR-1]`
 
-- NFR-1 [Must] The system shall
-- NFR-2 [Must] The system shall
-- NFR-3 [Should] The system shall
-- NFR-4 [Must] The system shall
+- NFR-1 [Must] The system shall support at least 5,000 registered student accounts and 200 verified group accounts. [Measure: 5,000 students / 200 groups, active without account-creation failures; condition: during the Orientation Week pilot] [Source: UR-6]
+- NFR-2 [Must] The system shall remove an event's personal RSVP/attendance records after cancellation. [Measure: fully removed within 30 days of cancellation, for 100% of cancelled events; condition: applies university-wide] [Source: UR-7]
+- NFR-3 [Should] The system shall make its core pages usable with a screen reader. [Measure: WCAG 2.1 AA conformance on the browse, RSVP, and follow pages; condition: assumption — no accessibility standard given in the brief] [Source: UR-2]
+- NFR-4 [Must] The system shall remove a hidden event from public listings promptly after a moderator's decision. [Measure: hidden within 5 minutes of the moderator's action; condition: assumption — no response-time target given in the brief] [Source: UR-5]
 
 ## 5. User stories and acceptance criteria
 
