@@ -1,8 +1,8 @@
 # CampusPulse requirements
 
-Name or team:
+Name or team: Sana Al Ali
 
-Date:
+Date: 8/9/2026
 
 Status: working draft
 
@@ -15,16 +15,18 @@ short enough to test and trace.
 
 List at least three capabilities that belong in the first release.
 
--
--
--
+- University sign-in (SSO) for all students and group officers
+- Verified group profiles, announcements, and events, with follow, RSVP, and audience visibility (public vs. members-only)
+- Corrections to published event/announcement details, with notification to attendees
+- Reporting, moderation (including immediate hide), and appeals
 
 ### Out of scope
 
 List at least two explicit exclusions.
 
--
--
+- Direct messages between users
+- External (non-university) users and payments
+- Native mobile app, video hosting, and AI-driven recommendations
 
 ## 2. User requirements
 
@@ -33,11 +35,13 @@ to the stakeholder evidence.
 
 Format: `UR-1 [Must] ... [Source: S1]`
 
-- UR-1 [Must]
-- UR-2 [Must]
-- UR-3 [Must]
-- UR-4 [Must]
-- UR-5 [Must]
+- UR-1 [Must] Students can RSVP to an event without their name appearing on a public attendee list unless they explicitly choose to share it. [Source: S1]
+- UR-2 [Must] Students can browse and RSVP to events and announcements using a screen reader and on a phone browser. [Source: S1]
+- UR-3 [Must] Multiple officers of a group can draft an announcement together, but only an approved officer can publish it. [Source: S2]
+- UR-4 [Must] Students who RSVP'd to an event are told if its date, time, or location changes. [Source: S2]
+- UR-5 [Must] A campus moderator can hide a reported event immediately, while a record of the report and the decision is kept for any appeal. [Source: S3]
+- UR-6 [Must] A group only shows an official verified badge after Student Affairs has checked and approved it. [Source: S4]
+- UR-7 [Must] A student's personal RSVP/attendance data is collected only where needed and removed within 30 days after an event is cancelled. [Source: S5]
 
 ## 3. Functional requirements
 
