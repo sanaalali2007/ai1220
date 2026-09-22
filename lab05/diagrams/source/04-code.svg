@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1740" height="1470" viewBox="0 0 1740 1470">
+<rect width="1740" height="1470" fill="white"/>
+<text x="50" y="48" font-family="DejaVu Sans, sans-serif" font-size="32" font-weight="bold" text-anchor="start" fill="#183247">04 · Code sketch — Reservation Service</text>
+<text x="50" y="87" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="#183247">C4 Level 4 | Expands: Reservation Service [Python component]; design only, no implementation</text>
+<rect x="60" y="140" width="1620" height="900" rx="12" fill="#f5faff" stroke="#42799e" stroke-width="2"/>
+<text x="85" y="178" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="bold" text-anchor="start" fill="#183247">RESERVATION SERVICE · COMPONENT BOUNDARY</text>
+<rect x="130" y="235" width="570" height="245" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="415.0" y="265" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">ReservationRules</text>
+<text x="415.0" y="293" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Class: Python]</text>
+<text x="415.0" y="324" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">reserve(student: VerifiedStudent,</text>
+<text x="415.0" y="349" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">workshopId: UUID) -&gt; ReservationResult</text>
+<text x="415.0" y="374" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Orchestrates one unit of work.</text>
+<text x="415.0" y="399" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Calls policy; commits before email.</text>
+<text x="415.0" y="424" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Existing → return unchanged; no email.</text>
+<rect x="1000" y="235" width="575" height="345" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="1287.5" y="265" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">SeatPolicy</text>
+<text x="1287.5" y="293" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Class: Python; pure decision]</text>
+<text x="1287.5" y="324" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">decide(workshop: Workshop,</text>
+<text x="1287.5" y="349" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">existing: Reservation | None,</text>
+<text x="1287.5" y="374" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">seatCount: int) -&gt; Decision</text>
+<text x="1287.5" y="399" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">1. Existing → Existing(existing)</text>
+<text x="1287.5" y="424" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">2. Not published → NotPublished</text>
+<text x="1287.5" y="449" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">3. seatCount &gt;= capacity → Full</text>
+<text x="1287.5" y="474" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">4. Otherwise → Allocate</text>
+<rect x="120" y="715" width="615" height="245" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="427.5" y="745" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">ReservationResult / Decision</text>
+<text x="427.5" y="773" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Typed values: discriminated unions]</text>
+<text x="427.5" y="804" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Decision = Existing | NotPublished | Full | Allocate</text>
+<text x="427.5" y="829" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">ReservationResult = Created(reservation, mailStatus)</text>
+<text x="427.5" y="854" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">| Existing(reservation) | NotPublished | Full</text>
+<text x="427.5" y="879" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">| NotFound | StorageFailure</text>
+<text x="427.5" y="904" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">MailStatus = Accepted | Unavailable</text>
+<rect x="1000" y="715" width="575" height="245" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="1287.5" y="745" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Domain values</text>
+<text x="1287.5" y="773" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Immutable Python data classes]</text>
+<text x="1287.5" y="804" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">VerifiedStudent: id, name, email</text>
+<text x="1287.5" y="829" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Workshop: UUID, ownerId, title, start,</text>
+<text x="1287.5" y="854" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">capacity: int[1..20], published: bool</text>
+<text x="1287.5" y="879" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Reservation: UUID, workshopId, studentId,</text>
+<text x="1287.5" y="904" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">name, email, createdAt</text>
+<rect x="120" y="1130" width="640" height="160" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="440.0" y="1160" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Board Repository</text>
+<text x="440.0" y="1188" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Supporting component / in-process port]</text>
+<text x="440.0" y="1219" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">unitOfWork(workshopId): lock, findOwn, count, insert</text>
+<text x="440.0" y="1244" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Commit / rollback; lock held through transaction.</text>
+<rect x="1000" y="1130" width="575" height="160" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="1287.5" y="1160" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Mail Gateway</text>
+<text x="1287.5" y="1188" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Supporting component / in-process port]</text>
+<text x="1287.5" y="1219" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">requestConfirmation(reservation, workshop)</text>
+<text x="1287.5" y="1244" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">→ MailStatus: Accepted | Unavailable</text>
+<text x="1287.5" y="1269" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Called only for new seats, after commit.</text>
+<polyline points="700,365 1000,365" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="1000,365 988.9472680719654,369.6730201077038 988.9472680719654,360.3269798922962" fill="#183247"/>
+<rect x="737.53125" y="265" width="224.9375" height="73" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="850" y="285" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">decide(locked workshop,</text>
+<text x="850" y="308" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">existing, seatCount)</text>
+<text x="850" y="331" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">→ Decision</text>
+<polyline points="380,480 380,715" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="380,715 375.3269798922962,703.9472680719654 384.6730201077038,703.9472680719654" fill="#183247"/>
+<rect x="395.46875" y="580" width="209.0625" height="27" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="500" y="600" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">returns typed outcome</text>
+<polyline points="1290,580 1290,715" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="1290,715 1285.326979892296,703.9472680719654 1294.673020107704,703.9472680719654" fill="#183247"/>
+<rect x="1323.59375" y="621" width="232.8125" height="26" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1440" y="640" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">policy reads domain values</text>
+<polyline points="165,480 90,480 90,1090 380,1090 380,1130" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="380,1130 375.3269798922962,1118.9472680719655 384.6730201077038,1118.9472680719655" fill="#183247"/>
+<rect x="170.5390625" y="1051" width="298.921875" height="26" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="320" y="1070" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">SQL unit of work via repository port</text>
+<polyline points="650,480 820,480 820,1105 1290,1105 1290,1130" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="1290,1130 1285.326979892296,1118.9472680719655 1294.673020107704,1118.9472680719655" fill="#183247"/>
+<rect x="1057.7578125" y="1061" width="404.484375" height="26" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1260" y="1080" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">Committed Created only: reservation + recipient</text>
+<text x="75" y="1345" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#183247">Invariant: count(reservations for W) ≤ W.capacity; unique (workshopId, studentId).</text>
+<text x="75" y="1372" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#183247">Every allocator locks the same workshop row before checking / inserting and holds it until commit. Waiting callers then</text>
+<text x="75" y="1399" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#183247">read committed state at READ COMMITTED. Authentication fails in Web Controller before this component is called.</text>
+<text x="75" y="1445" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#183247">Legend: blue = code element inside the component; supporting ports are outside. Arrows = uses / returns.</text>
+</svg>

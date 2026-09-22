@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1540" viewBox="0 0 1800 1540">
+<rect width="1800" height="1540" fill="white"/>
+<text x="50" y="48" font-family="DejaVu Sans, sans-serif" font-size="32" font-weight="bold" text-anchor="start" fill="#183247">03 · Components — Board Web Application</text>
+<text x="50" y="87" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="#183247">C4 Level 3 | Expands: Board Web Application [Python / Django container]</text>
+<rect x="60" y="320" width="1680" height="835" rx="12" fill="#f5faff" stroke="#42799e" stroke-width="2"/>
+<text x="85" y="355" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="bold" text-anchor="start" fill="#183247">BOARD WEB APPLICATION · ALL COMPONENTS ARE PYTHON MODULES IN ONE PROCESS</text>
+<rect x="100" y="125" width="380" height="145" rx="12" fill="#edf0f3" stroke="#42799e" stroke-width="2"/>
+<text x="290.0" y="155" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Campus Identity</text>
+<text x="290.0" y="183" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[External software system]</text>
+<text x="290.0" y="214" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Verifies university credential.</text>
+<rect x="710" y="125" width="380" height="145" rx="12" fill="#edf0f3" stroke="#42799e" stroke-width="2"/>
+<text x="900.0" y="155" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">University Student</text>
+<text x="900.0" y="183" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Person / web browser]</text>
+<text x="900.0" y="214" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Requests pages and actions.</text>
+<rect x="100" y="405" width="380" height="170" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="290.0" y="435" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Identity Gateway</text>
+<text x="290.0" y="463" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Component: Python / HTTPS client]</text>
+<text x="290.0" y="494" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">verify(credential) / require(session)</text>
+<text x="290.0" y="519" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Creates trusted VerifiedStudent.</text>
+<text x="290.0" y="544" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Rejects invalid identity.</text>
+<rect x="710" y="405" width="380" height="170" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="900.0" y="435" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Web Controller</text>
+<text x="900.0" y="463" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Component: Django views]</text>
+<text x="900.0" y="494" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Authenticate every board request.</text>
+<text x="900.0" y="519" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Render pages; dispatch actions.</text>
+<text x="900.0" y="544" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Use trusted student ID only.</text>
+<rect x="1320" y="685" width="380" height="205" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="1510.0" y="715" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Workshop Service</text>
+<text x="1510.0" y="743" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Component: Python]</text>
+<text x="1510.0" y="774" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Create: unique ID; title not empty.</text>
+<text x="1510.0" y="799" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Require start; capacity 1–20.</text>
+<text x="1510.0" y="824" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Creator owns; owner-only publish/list.</text>
+<text x="1510.0" y="849" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Published board + own booking.</text>
+<rect x="710" y="685" width="380" height="180" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="900.0" y="715" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Reservation Service</text>
+<text x="900.0" y="743" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Component: Python]</text>
+<text x="900.0" y="774" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Apply reservation rules atomically.</text>
+<text x="900.0" y="799" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Existing seat before capacity check.</text>
+<text x="900.0" y="824" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Commit seat before asking for mail.</text>
+<rect x="100" y="685" width="380" height="180" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="290.0" y="715" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Mail Gateway</text>
+<text x="290.0" y="743" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Component: Python / HTTPS client]</text>
+<text x="290.0" y="774" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">requestConfirmation(reservation,</text>
+<text x="290.0" y="799" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">workshop) → Accepted / Unavailable</text>
+<text x="290.0" y="824" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Timeout = unavailable; no retry.</text>
+<rect x="100" y="1220" width="380" height="160" rx="12" fill="#edf0f3" stroke="#42799e" stroke-width="2"/>
+<text x="290.0" y="1250" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">University Mail</text>
+<text x="290.0" y="1278" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[External software system]</text>
+<text x="290.0" y="1309" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Accepts confirmation requests.</text>
+<rect x="1090" y="960" width="540" height="170" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="1360.0" y="990" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Board Repository</text>
+<text x="1360.0" y="1018" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Component: Django ORM / SQL]</text>
+<text x="1360.0" y="1049" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Durable workshop and reservation access.</text>
+<text x="1360.0" y="1074" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Unit of work; lock workshop through commit.</text>
+<text x="1360.0" y="1099" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Atomic board reads; unique reservation key.</text>
+<rect x="1090" y="1230" width="540" height="175" rx="12" fill="#e1f2e8" stroke="#42799e" stroke-width="2"/>
+<text x="1360.0" y="1260" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Board Database</text>
+<text x="1360.0" y="1288" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Container: PostgreSQL]</text>
+<text x="1360.0" y="1319" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Workshops, owners, reservations and contact data.</text>
+<text x="1360.0" y="1344" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Constraints + durable transactions + row locks.</text>
+<polyline points="900,270 900,405" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="900,405 895.3269798922962,393.94726807196537 904.6730201077038,393.94726807196537" fill="#183247"/>
+<rect x="1021.3984375" y="266" width="407.203125" height="49" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1225" y="285" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">HTTPS: credential / session + form data</text>
+<text x="1225" y="308" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">HTML: details, own seat / attendee list / outcome</text>
+<polyline points="710,485 480,485" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="480,485 491.05273192803463,480.3269798922962 491.05273192803463,489.6730201077038" fill="#183247"/>
+<rect x="488.3515625" y="413" width="213.296875" height="49" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="595" y="432" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">verify / require</text>
+<text x="595" y="455" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">→ VerifiedStudent or 401</text>
+<polyline points="290,405 290,270" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="290,270 294.6730201077038,281.05273192803463 285.3269798922962,281.05273192803463" fill="#183247"/>
+<rect x="379.8515625" y="267" width="230.296875" height="48" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="495" y="285" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">HTTPS / JSON: credential</text>
+<text x="495" y="308" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">→ ID, name, email / rejection</text>
+<polyline points="900,575 900,685" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="900,685 895.3269798922962,673.9472680719654 904.6730201077038,673.9472680719654" fill="#183247"/>
+<rect x="901.109375" y="602" width="293.78125" height="48" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1048" y="620" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">reserve(VerifiedStudent, workshopId)</text>
+<text x="1048" y="643" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">→ ReservationResult</text>
+<polyline points="1090,520 1510,520 1510,685" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="1510,685 1505.326979892296,673.9472680719654 1514.673020107704,673.9472680719654" fill="#183247"/>
+<rect x="1175.46875" y="547" width="369.0625" height="71" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1360" y="565" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">create / publish / browse / attendees</text>
+<text x="1360" y="588" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">Trusted student + details / workshopId</text>
+<text x="1360" y="611" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">→ Workshop / summaries / owner-only contacts</text>
+<polyline points="710,775 480,775" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="480,775 491.05273192803463,770.3269798922962 491.05273192803463,779.6730201077038" fill="#183247"/>
+<rect x="487.6171875" y="672" width="214.765625" height="71" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="595" y="690" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">requestConfirmation</text>
+<text x="595" y="713" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">New reservation + contact</text>
+<text x="595" y="736" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">→ Accepted / Unavailable</text>
+<polyline points="290,865 290,1220" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="290,1220 285.3269798922962,1208.9472680719655 294.6730201077038,1208.9472680719655" fill="#183247"/>
+<rect x="398.8671875" y="991" width="222.265625" height="72" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="510" y="1010" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">HTTPS / JSON: recipient,</text>
+<text x="510" y="1033" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">reservation and workshop</text>
+<text x="510" y="1056" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">→ Accepted / Unavailable</text>
+<polyline points="970,865 970,1045 1090,1045" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="1090,1045 1078.9472680719655,1049.673020107704 1078.9472680719655,1040.326979892296" fill="#183247"/>
+<rect x="645.703125" y="917" width="308.59375" height="71" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="800" y="935" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">In-process unitOfWork:</text>
+<text x="800" y="958" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">lock + findOwn + count + insert</text>
+<text x="800" y="981" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">→ stored / existing reservation; commit</text>
+<polyline points="1510,890 1510,960" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="1510,960 1505.326979892296,948.9472680719654 1514.673020107704,948.9472680719654" fill="#183247"/>
+<rect x="1160.09375" y="887" width="279.8125" height="48" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1300" y="905" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">In-process: save / publish / query</text>
+<text x="1300" y="928" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">→ workshop / summaries / contacts</text>
+<polyline points="1360,1130 1360,1230" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="1360,1230 1355.326979892296,1218.9472680719655 1364.673020107704,1218.9472680719655" fill="#183247"/>
+<rect x="1410.8671875" y="1154" width="238.265625" height="48" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1530" y="1172" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">SQL over PostgreSQL protocol</text>
+<text x="1530" y="1195" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">Rows / commit / error</text>
+<text x="70" y="1460" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#183247">Legend: blue = component; green = data store; grey = external / supporting element. Boundary = named parent container.</text>
+<text x="70" y="1487" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#183247">All internal interfaces use in-process Python calls and typed values; only gateways and repository cross process boundaries.</text>
+</svg>

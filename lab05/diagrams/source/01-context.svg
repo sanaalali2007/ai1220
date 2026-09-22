@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1070" viewBox="0 0 1500 1070">
+<rect width="1500" height="1070" fill="white"/>
+<text x="50" y="48" font-family="DejaVu Sans, sans-serif" font-size="32" font-weight="bold" text-anchor="start" fill="#183247">01 · System context — Campus Workshop Board</text>
+<text x="50" y="87" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="#183247">C4 Level 1 | Scope: the complete software system and its environment</text>
+<rect x="470" y="280" width="580" height="460" rx="12" fill="#f5faff" stroke="#42799e" stroke-width="2"/>
+<text x="495" y="315" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold" text-anchor="start" fill="#183247">TEAM RESPONSIBILITY</text>
+<rect x="575" y="390" width="370" height="190" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="760.0" y="420" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Campus Workshop Board</text>
+<text x="760.0" y="448" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Software system]</text>
+<text x="760.0" y="479" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Publish and browse workshops.</text>
+<text x="760.0" y="504" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Reserve seats; show own booking.</text>
+<text x="760.0" y="529" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Owner-only attendee information.</text>
+<rect x="70" y="405" width="315" height="185" rx="12" fill="#edf0f3" stroke="#42799e" stroke-width="2"/>
+<text x="227.5" y="435" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">University Student</text>
+<text x="227.5" y="463" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Person]</text>
+<text x="227.5" y="494" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Browses and reserves.</text>
+<text x="227.5" y="519" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">A workshop creator is its</text>
+<text x="227.5" y="544" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">organiser / owner.</text>
+<rect x="1110" y="150" width="320" height="160" rx="12" fill="#edf0f3" stroke="#42799e" stroke-width="2"/>
+<text x="1270.0" y="180" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Campus Identity</text>
+<text x="1270.0" y="208" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[External software system]</text>
+<text x="1270.0" y="239" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Verifies university credentials.</text>
+<text x="1270.0" y="264" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Supplies ID, name and email.</text>
+<rect x="1110" y="680" width="320" height="160" rx="12" fill="#edf0f3" stroke="#42799e" stroke-width="2"/>
+<text x="1270.0" y="710" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">University Mail</text>
+<text x="1270.0" y="738" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[External software system]</text>
+<text x="1270.0" y="769" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Accepts confirmation requests.</text>
+<text x="1270.0" y="794" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Outside the team’s control.</text>
+<polyline points="385,495 575,495" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="575,495 563.9472680719654,499.6730201077038 563.9472680719654,490.3269798922962" fill="#183247"/>
+<rect x="377.6796875" y="372" width="204.640625" height="48" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="480" y="390" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">Browse / create / publish;</text>
+<text x="480" y="413" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">reserve / view attendees</text>
+<rect x="369.96875" y="587" width="220.0625" height="48" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="480" y="605" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">Workshop details, own seat</text>
+<text x="480" y="628" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#183247">or owner-only attendee list</text>
+<polyline points="945,435 1020,435 1020,235 1110,235" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="1110,235 1098.9472680719655,239.6730201077038 1098.9472680719655,230.3269798922962" fill="#183247"/>
+<rect x="937.734375" y="136" width="144.53125" height="26" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1010" y="155" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">Verify credential</text>
+<rect x="1036.78125" y="336" width="266.4375" height="49" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1170" y="355" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">Result: verified ID, name, email</text>
+<text x="1170" y="378" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">or rejected credential</text>
+<polyline points="945,530 1020,530 1020,760 1110,760" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="1110,760 1098.9472680719655,764.6730201077038 1098.9472680719655,755.3269798922962" fill="#183247"/>
+<rect x="1039.6484375" y="576" width="280.703125" height="49" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="595" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">Request confirmation: recipient,</text>
+<text x="1180" y="618" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">workshop and reservation details</text>
+<rect x="1066.625" y="871" width="266.75" height="26" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1200" y="890" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">Result: accepted or unavailable</text>
+<text x="70" y="795" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#183247">The organiser is a student role, not a separate user account.</text>
+<text x="70" y="822" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#183247">Publishing does not reserve a seat. Board use requires verified university identity.</text>
+<text x="70" y="955" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#183247">Legend: blue = team-owned software; grey = person or external system.</text>
+<text x="70" y="982" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#183247">Boundary = ownership scope. Arrows = request / use; labels also state returned information.</text>
+</svg>

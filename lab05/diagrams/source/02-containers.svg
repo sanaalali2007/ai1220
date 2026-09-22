@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1650" height="1240" viewBox="0 0 1650 1240">
+<rect width="1650" height="1240" fill="white"/>
+<text x="50" y="48" font-family="DejaVu Sans, sans-serif" font-size="32" font-weight="bold" text-anchor="start" fill="#183247">02 · Containers — Campus Workshop Board</text>
+<text x="50" y="87" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="normal" text-anchor="start" fill="#183247">C4 Level 2 | Expands: Campus Workshop Board [Software system]</text>
+<rect x="400" y="145" width="790" height="860" rx="12" fill="#f5faff" stroke="#42799e" stroke-width="2"/>
+<text x="425" y="180" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="bold" text-anchor="start" fill="#183247">CAMPUS WORKSHOP BOARD · SOFTWARE SYSTEM BOUNDARY</text>
+<rect x="50" y="300" width="290" height="170" rx="12" fill="#edf0f3" stroke="#42799e" stroke-width="2"/>
+<text x="195.0" y="330" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">University Student</text>
+<text x="195.0" y="358" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Person / web browser]</text>
+<text x="195.0" y="389" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Uses server-rendered pages.</text>
+<text x="195.0" y="414" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Browser is supporting context.</text>
+<rect x="565" y="280" width="450" height="215" rx="12" fill="#dceefa" stroke="#42799e" stroke-width="2"/>
+<text x="790.0" y="310" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Board Web Application</text>
+<text x="790.0" y="338" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Container: Python / Django]</text>
+<text x="790.0" y="369" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Renders HTML and handles requests.</text>
+<text x="790.0" y="394" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Verifies identity; enforces ownership.</text>
+<text x="790.0" y="419" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Allocates seats; requests confirmation.</text>
+<text x="790.0" y="444" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">One deployable application.</text>
+<rect x="565" y="710" width="450" height="220" rx="12" fill="#e1f2e8" stroke="#42799e" stroke-width="2"/>
+<text x="790.0" y="740" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Board Database</text>
+<text x="790.0" y="768" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[Container: PostgreSQL]</text>
+<text x="790.0" y="799" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Persistent workshops + ownership.</text>
+<text x="790.0" y="824" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Persistent reservations + contact data.</text>
+<text x="790.0" y="849" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Unique (workshop ID, student ID).</text>
+<text x="790.0" y="874" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Transactions and workshop row locks.</text>
+<rect x="1250" y="250" width="340" height="175" rx="12" fill="#edf0f3" stroke="#42799e" stroke-width="2"/>
+<text x="1420.0" y="280" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">Campus Identity</text>
+<text x="1420.0" y="308" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[External software system]</text>
+<text x="1420.0" y="339" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Verify credential via HTTPS / JSON.</text>
+<text x="1420.0" y="364" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Returns verified ID, name, email.</text>
+<rect x="1250" y="720" width="340" height="175" rx="12" fill="#edf0f3" stroke="#42799e" stroke-width="2"/>
+<text x="1420.0" y="750" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#183247">University Mail</text>
+<text x="1420.0" y="778" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#183247">[External software system]</text>
+<text x="1420.0" y="809" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Send confirmation via HTTPS / JSON.</text>
+<text x="1420.0" y="834" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Returns accepted / unavailable.</text>
+<polyline points="340,385 565,385" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="565,385 553.9472680719654,389.6730201077038 553.9472680719654,380.3269798922962" fill="#183247"/>
+<rect x="325.796875" y="241" width="244.40625" height="49" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="448" y="260" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">HTTPS: form / page requests</text>
+<text x="448" y="283" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">+ credential / session cookie</text>
+<rect x="324.0703125" y="529" width="247.859375" height="49" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="448" y="548" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">HTML: workshop details, own</text>
+<text x="448" y="571" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">seat or owner attendee list</text>
+<polyline points="1015,355 1250,355" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="1250,355 1238.9472680719655,359.6730201077038 1238.9472680719655,350.3269798922962" fill="#183247"/>
+<rect x="1030.15625" y="226" width="209.6875" height="26" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1135" y="245" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">Credential → verification</text>
+<rect x="1021.8125" y="453" width="226.375" height="26" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1135" y="472" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">Verified student / rejection</text>
+<polyline points="1015,435 1160,435 1160,805 1250,805" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="1250,805 1238.9472680719655,809.6730201077038 1238.9472680719655,800.3269798922962" fill="#183247"/>
+<rect x="1168.234375" y="556" width="303.53125" height="49" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="1320" y="575" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">Recipient + workshop + reservation</text>
+<text x="1320" y="598" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#183247">after successful database commit</text>
+<polyline points="790,495 790,710" fill="none" stroke="#183247" stroke-width="2"/>
+<polygon points="790,710 785.3269798922962,698.9472680719654 794.6730201077038,698.9472680719654" fill="#183247"/>
+<rect x="626.125" y="546" width="337.75" height="74" rx="3" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+<text x="795" y="567" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">PostgreSQL wire protocol / SQL</text>
+<text x="795" y="590" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">Read and write stored state; BEGIN,</text>
+<text x="795" y="613" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#183247">lock workshop, INSERT, COMMIT</text>
+<text x="70" y="1060" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#183247">Structural choice: a server-rendered application and one relational database keep deployment and</text>
+<text x="70" y="1087" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#183247">maintenance small for 200 students while supporting durable, transactional seat allocation.</text>
+<text x="70" y="1165" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#183247">Legend: blue = application; green = data store; grey = supporting element / external system.</text>
+<text x="70" y="1192" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#183247">Boundary = system; arrows = requests, with data / outcomes named. External API contracts are design assumptions.</text>
+</svg>
