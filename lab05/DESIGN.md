@@ -1,7 +1,7 @@
 # Campus Workshop Board - Design notes
 
-Name: [Your name]
-Student ID: [Your student ID]
+Name: [Sana Al Ali ]
+Student ID: [25011167]
 
 Let the diagrams carry the explanation. Complete only these short notes.
 
