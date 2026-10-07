@@ -11,8 +11,8 @@ Status: TODO - complete the exercises and record your own observations.
 ## Exercise 1 - Explore and make a commit
 
 - Working folder: TODO
-- Git repository root: TODO
-- Initial report commit hash (`Start lab04 report`):c847613720d2b70b5704524f7e3882364f400791
+- Git repository root: b6b47b3
+- Initial report commit hash (`Start lab04 report`):d7457c32ceafd968602d00dd4953a2c3069a8627
 - Files included in that commit: Lab04/REPORT.md
 - What was saved in that commit: the initial version of the lab report. Git showed that only lab04/REPORT.md was included.
 - Which file owns the playlist, and why: backend.py owns the playlist because the songs list and next_id counter are stored in the running Python process. It validates and stores additions and assigns IDs.
