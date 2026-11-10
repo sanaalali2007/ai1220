@@ -1,0 +1,22 @@
+{
+  "label": "ifm",
+  "base_url": "https://api.ifm.ai/v1",
+  "model_setting": "IFM/K2-Horizon-375B-A23B",
+  "turns": [
+    {
+      "question": "Hello! What can you help me with?",
+      "output": "desk> \nI can help you find general information about studying effectively and provide guidance on study room policies and etiquette. However, I cannot check real-time room availability, make bookings, or create new library rules. How can I assist you with your study needs today?",
+      "seconds": 3.4
+    },
+    {
+      "question": "My name is Sam and I study physics.",
+      "output": "desk> \nIt's nice to meet you, Sam! Physics is a demanding subject, so finding the right environment for problem-solving or group work is key. How can I assist you with finding a suitable study space?",
+      "seconds": 2.1
+    },
+    {
+      "question": "What is my name?",
+      "output": "desk> \nYour name is Sam.",
+      "seconds": 2.8
+    }
+  ]
+}

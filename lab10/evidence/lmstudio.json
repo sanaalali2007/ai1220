@@ -1,0 +1,22 @@
+{
+  "label": "lmstudio",
+  "base_url": "http://127.0.0.1:1235/v1",
+  "model_setting": "qwen/qwen3-4b-2507",
+  "turns": [
+    {
+      "question": "Hello! What can you help me with?",
+      "output": "desk> I can help you with questions about using the study rooms, such as availability, booking, or rules. Let me know what you need!",
+      "seconds": 0.8
+    },
+    {
+      "question": "My name is Sam and I study physics.",
+      "output": "desk> That's great, Sam! If you need help with study rooms or resources related to physics, I'm here to assist.",
+      "seconds": 0.3
+    },
+    {
+      "question": "What is my name?",
+      "output": "desk> Your name is Sam.",
+      "seconds": 0.3
+    }
+  ]
+}
